@@ -1,0 +1,44 @@
+.gallery {
+  h2 {
+    border-left: 3px solid #83b85c;
+    font-weight: normal;
+    padding-left: 5px;
+    width: 80%;
+    font-size: 3em;
+    margin-left: 2em;
+  }
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #d9d9d7;
+  padding: 5px 0 ;
+}
+
+.arrow-left {
+  background: url("../../assets/arrow_left.png") no-repeat center center;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+}
+
+.photo {
+  display: flex;
+  flex-direction: row;
+
+  a {
+    img {
+      height: 20em;
+      padding: 5px;
+    }
+  }
+}
+
+.arrow-right {
+  width: 48px;
+  height: 48px;
+  background: url("../../assets/arrow_right.png") no-repeat center center;
+  cursor: pointer;
+}
