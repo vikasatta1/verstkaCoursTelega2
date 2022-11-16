@@ -1,6 +1,7 @@
 import React from 'react';
 import './Navigation.scss'
 import {ImSearch} from 'react-icons/im'
+import {BsFacebook,BsInstagram,BsTelegram} from 'react-icons/bs'
 import icon_top from '../../assets/top_icon.png'
 
 const Navigation = () => {
@@ -36,10 +37,9 @@ const Navigation = () => {
             <div className="soc-icons">
                 <p>
                     Подписаться на наши новости:
-                    <a href="#"><i></i></a>
-                    <a href="#"><i></i></a>
-                    <a href="#"><i></i></a>
-                    <a href="#"><i></i></a>
+                    <a href="#"><BsFacebook/></a>
+                    <a href="#"><BsInstagram/></a>
+                    <a href="#"><BsTelegram/></a>
                 </p>
             </div>
             <div className="banner">

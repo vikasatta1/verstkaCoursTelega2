@@ -1,14 +1,12 @@
 .container {
-  width: 80%;
-  margin: 0 auto;
-  border: 1px solid red;
+
 }
 
 .menu {
   display: flex;
   align-items: center;
   position: relative;
-  border-bottom: 1px solid #dfdf;
+  border-bottom: 1px solid #ccccce;
 
   nav > ul {
     display: flex;
@@ -30,9 +28,29 @@
       }
     }
   }
+
+  form {
+    input {
+      border-radius: 4px;
+      border: 1px solid #dcdcdc;
+      outline: 0;
+      padding: 0.5em;
+    }
+
+    button {
+      border: none;
+      background: none;
+      outline: 0;
+      cursor: pointer;
+    }
+  }
+
+  img {
+    position: absolute;
+    right: 2em;
+    bottom: -0.5em;
+  }
 }
-
-
 
 .submenu {
   display: none;
@@ -47,15 +65,98 @@
 
   li {
     padding: 5px;
-    a{
+
+    a {
       color: #fff;
     }
   }
 }
-.menu .submenu li a{
+
+.menu .submenu li a {
   color: white;
+
+}
+
+.submenu li a:hover {
+  text-decoration: underline;
 }
 
 .menu nav > ul li:hover .submenu {
   display: block;
+}
+
+
+.soc-icons {
+  p {
+    font-size: 1.4em;
+    color: #757575;
+  }
+
+  a {
+    color: #00a1ad;
+    margin: 0 3px;
+
+  }
+}
+
+.banner {
+  .slider {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .arrow_left {
+      background: url("../../assets/alb.png") no-repeat center center;
+      width: 4.8em;
+      height: 4.8em;
+      position: absolute;
+      cursor: pointer;
+      left: 2em;
+    }
+
+    .photo {
+      height: 37em;
+      flex-basis: 100%;
+      background: url("../../assets/slider.jpg") no-repeat center bottom/cover;
+
+      p {
+        color: #fff;
+        background: rgba(0, 0, 0, 0.7);
+        display: inline-block;
+        font-size: 2em;
+        position: absolute;
+        padding: 1em;
+        left: 1em;
+        bottom: 1em;
+      }
+    }
+
+    .arrow_right {
+      background: url("../../assets/arb.png") no-repeat center center;
+      width: 4.8em;
+      height: 4.8em;
+      position: absolute;
+      right: 2em;
+      cursor: pointer;
+    }
+  }
+
+  .slider_switch {
+
+    text-align: center;
+    margin-top: 1em;
+    span {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      border-radius: 100%;
+      border: 2px solid #278a87;
+      cursor: pointer;
+      margin: 0.1em;
+    }
+
+    .active {
+background: #efc01a;
+    }
+  }
 }
